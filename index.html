@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Thailand Companies & Hotels Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    #map { height: 100vh; width: 100%; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    // 初始化地图（曼谷为中心点）
+    var map = L.map('map').setView([13.7563, 100.5018], 7);
+
+    // 加载地图底图
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '© OpenStreetMap'
+    }).addTo(map);
+
+    // 公司和工地数据
+    var locations = [
+      { name: "Jianping Construction (Phase 1)", coords: [13.7279, 100.5241] },
+      { name: "Jianping Construction Land", coords: [13.72, 100.53] },
+      { name: "TNN Land", coords: [13.75, 100.55] },
+      { name: "Hufeng Engineering (Rayong)", coords: [12.6814, 101.2817] },
+      { name: "Hufeng Engineering Land (Chonburi)", coords: [13.3611, 100.9847] },
+      { name: "Huachuan Construction Site (Chonburi)", coords: [13.36, 101.0] },
+      { name: "Xinnanyang Company (Bangkok)", coords: [13.7563, 100.5018] },
+      { name: "Xinnanyang Land (Inventec Factory)", coords: [13.73, 100.58] },
+      { name: "Rongtai Construction Site", coords: [13.70, 100.50] },
+      { name: "Huachuan Company", coords: [13.71, 100.52] }
+    ];
+
+    // 酒店示例
+    var hotels = [
+      { name: "Bangkok Hotel Example", coords: [13.75, 100.52] },
+      { name: "Chonburi Hotel Example", coords: [13.36, 100.98] },
+      { name: "Rayong Hotel Example", coords: [12.68, 101.28] }
+    ];
+
+    // 添加公司标记（蓝色）
+    locations.forEach(function(loc) {
+      L.marker(loc.coords).addTo(map)
+        .bindPopup("<b>" + loc.name + "</b>");
+    });
+
+    // 添加酒店标记（红色）
+    var hotelIcon = L.icon({
+      iconUrl: "https://maps.gstatic.com/mapfiles/ms2/micons/red-dot.png",
+      iconSize: [32, 32],
+      iconAnchor: [16, 32],
+      popupAnchor: [0, -32]
+    });
+
+    hotels.forEach(function(hotel) {
+      L.marker(hotel.coords, { icon: hotelIcon }).addTo(map)
+        .bindPopup("<b>" + hotel.name + "</b>");
+    });
+  </script>
+</body>
+</html>
