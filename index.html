@@ -16,8 +16,11 @@
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script>
-    // 初始化地图（曼谷为中心点）
-    var map = L.map('map').setView([13.7563, 100.5018], 7);
+    // 精确酒店坐标（Center Point Thonglor Hotel, Sukhumvit 55, Bangkok）
+    var hotelCenter = [13.7316, 100.5824]; 
+
+    // 初始化地图，以酒店为中心
+    var map = L.map('map').setView(hotelCenter, 7);
 
     // 加载地图底图
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -25,7 +28,7 @@
       attribution: '© OpenStreetMap'
     }).addTo(map);
 
-    // 公司和工地数据（中英文）
+    // 公司和工地数据（中英文，approximate）
     var locations = [
       { name: "建平建筑园区1期 / Jianping Construction Phase 1", coords: [13.7279, 100.5241] },
       { name: "建平建筑土地 / Jianping Construction Land", coords: [13.72, 100.53] },
@@ -39,9 +42,9 @@
       { name: "华川公司 / Huachuan Company", coords: [13.71, 100.52] }
     ];
 
-    // 酒店示例（中英文）
+    // 酒店标记
     var hotels = [
-      { name: "通罗中心点大酒店 / Center Point Thonglor Hotel", coords: [13.7316, 100.5824] }
+      { name: "通罗中心点大酒店 / Center Point Thonglor Hotel", coords: hotelCenter }
     ];
 
     // 添加公司标记（蓝色）
