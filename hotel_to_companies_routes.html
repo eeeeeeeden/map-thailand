@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5a215b148a2f6df325326bdfff63f135 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5a215b148a2f6df325326bdfff63f135" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5a215b148a2f6df325326bdfff63f135 = L.map(
+                "map_5a215b148a2f6df325326bdfff63f135",
+                {
+                    center: [13.7316, 100.5824],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_65b342672ae6ea6b1a390c964c30a872 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5a215b148a2f6df325326bdfff63f135);
+        
+    
+            var marker_74b614962c70de3cb133a34f6eccb46f = L.marker(
+                [13.7316, 100.5824],
+                {}
+            ).addTo(map_5a215b148a2f6df325326bdfff63f135);
+        
+    
+        var popup_2c7265d9b013edc3c15c2625150389f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e5788c29bb47c98d809e9e60c6567c02 = $(`<div id="html_e5788c29bb47c98d809e9e60c6567c02" style="width: 100.0%; height: 100.0%;">Thonglor Centre Hotel (Bangkok)</div>`)[0];
+            popup_2c7265d9b013edc3c15c2625150389f6.setContent(html_e5788c29bb47c98d809e9e60c6567c02);
+        
+
+        marker_74b614962c70de3cb133a34f6eccb46f.bindPopup(popup_2c7265d9b013edc3c15c2625150389f6)
+        ;
+
+        
+    
+    
+            var marker_0777546d4c4a8a7539f9cd3a8c73daf2 = L.marker(
+                [12.707, 101.147],
+                {}
+            ).addTo(map_5a215b148a2f6df325326bdfff63f135);
+        
+    
+        var popup_4f4479288e483438ce191197d1778c7e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_964ecab79739ba9b04d97c96fbd6c517 = $(`<div id="html_964ecab79739ba9b04d97c96fbd6c517" style="width: 100.0%; height: 100.0%;">建平建筑园区1期 (Rayong)</div>`)[0];
+            popup_4f4479288e483438ce191197d1778c7e.setContent(html_964ecab79739ba9b04d97c96fbd6c517);
+        
+
+        marker_0777546d4c4a8a7539f9cd3a8c73daf2.bindPopup(popup_4f4479288e483438ce191197d1778c7e)
+        ;
+
+        
+    
+    
+            var poly_line_3d07fa9736f24d39aff23edabdb1d580 = L.polyline(
+                [[13.7316, 100.5824], [12.707, 101.147]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_5a215b148a2f6df325326bdfff63f135);
+        
+    
+            var marker_193edc104147fccf3474ba531328bd60 = L.marker(
+                [12.707, 101.147],
+                {}
+            ).addTo(map_5a215b148a2f6df325326bdfff63f135);
+        
+    
+            var icon_b2190bc888e91e62d170cd747e28f760 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_193edc104147fccf3474ba531328bd60.setIcon(icon_b2190bc888e91e62d170cd747e28f760);
+        
+    
+        var popup_373cc2a05bfd06c54a217207fc3e9d31 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_95ff786838e390c92b1c231b3991b878 = $(`<div id="html_95ff786838e390c92b1c231b3991b878" style="width: 100.0%; height: 100.0%;">建平建筑园区1期 (Rayong) 约 128.8 公里</div>`)[0];
+            popup_373cc2a05bfd06c54a217207fc3e9d31.setContent(html_95ff786838e390c92b1c231b3991b878);
+        
+
+        marker_193edc104147fccf3474ba531328bd60.bindPopup(popup_373cc2a05bfd06c54a217207fc3e9d31)
+        ;
+
+        
+    
+    
+            var marker_5b314a5414a18d4fba177fb03895048f = L.marker(
+                [12.75, 101.2],
+                {}
+            ).addTo(map_5a215b148a2f6df325326bdfff63f135);
+        
+    
+        var popup_26f0785edc770e6b5dd6dd26c18eb609 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_767211ea396c55e54bb6aee946457c6b = $(`<div id="html_767211ea396c55e54bb6aee946457c6b" style="width: 100.0%; height: 100.0%;">TNN土地 (Rayong)</div>`)[0];
+            popup_26f0785edc770e6b5dd6dd26c18eb609.setContent(html_767211ea396c55e54bb6aee946457c6b);
+        
+
+        marker_5b314a5414a18d4fba177fb03895048f.bindPopup(popup_26f0785edc770e6b5dd6dd26c18eb609)
+        ;
+
+        
+    
+    
+            var poly_line_ee29c6b7c8c6ee54e6205c1205b17469 = L.polyline(
+                [[13.7316, 100.5824], [12.75, 101.2]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_5a215b148a2f6df325326bdfff63f135);
+        
+    
+            var marker_c12551f5595e4f97d3a57648dac4d24d = L.marker(
+                [12.75, 101.2],
+                {}
+            ).addTo(map_5a215b148a2f6df325326bdfff63f135);
+        
+    
+            var icon_f632924b2fc3a834b819eae754373828 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c12551f5595e4f97d3a57648dac4d24d.setIcon(icon_f632924b2fc3a834b819eae754373828);
+        
+    
+        var popup_1aa7f29092ae32edc078205c2b4fce28 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a55f3dd9ab4eb54e669011724f3d0142 = $(`<div id="html_a55f3dd9ab4eb54e669011724f3d0142" style="width: 100.0%; height: 100.0%;">TNN土地 (Rayong) 约 127.6 公里</div>`)[0];
+            popup_1aa7f29092ae32edc078205c2b4fce28.setContent(html_a55f3dd9ab4eb54e669011724f3d0142);
+        
+
+        marker_c12551f5595e4f97d3a57648dac4d24d.bindPopup(popup_1aa7f29092ae32edc078205c2b4fce28)
+        ;
+
+        
+    
+    
+            var marker_95b8516459251d503704d22f0bd12e2c = L.marker(
+                [12.72, 101.17],
+                {}
+            ).addTo(map_5a215b148a2f6df325326bdfff63f135);
+        
+    
+        var popup_aefa71858b4dc713360ca47c9d0b82e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_369bbf872d7e5b6e63e2ddc552b0bd0a = $(`<div id="html_369bbf872d7e5b6e63e2ddc552b0bd0a" style="width: 100.0%; height: 100.0%;">虎峰工程公司 (Rayong)</div>`)[0];
+            popup_aefa71858b4dc713360ca47c9d0b82e3.setContent(html_369bbf872d7e5b6e63e2ddc552b0bd0a);
+        
+
+        marker_95b8516459251d503704d22f0bd12e2c.bindPopup(popup_aefa71858b4dc713360ca47c9d0b82e3)
+        ;
+
+        
+    
+    
+            var poly_line_9e252b7639b25915e17afb0734273c24 = L.polyline(
+                [[13.7316, 100.5824], [12.72, 101.17]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_5a215b148a2f6df325326bdfff63f135);
+        
+    
+            var marker_0c79de5680b95474bc6b1a87be463c04 = L.marker(
+                [12.72, 101.17],
+                {}
+            ).addTo(map_5a215b148a2f6df325326bdfff63f135);
+        
+    
+            var icon_313b541d25318099970b99e6f05d2c10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0c79de5680b95474bc6b1a87be463c04.setIcon(icon_313b541d25318099970b99e6f05d2c10);
+        
+    
+        var popup_0275a84f6201231d8bdecc3351d336e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2e7cb9455518d34a156ec0820273746 = $(`<div id="html_b2e7cb9455518d34a156ec0820273746" style="width: 100.0%; height: 100.0%;">虎峰工程公司 (Rayong) 约 128.8 公里</div>`)[0];
+            popup_0275a84f6201231d8bdecc3351d336e0.setContent(html_b2e7cb9455518d34a156ec0820273746);
+        
+
+        marker_0c79de5680b95474bc6b1a87be463c04.bindPopup(popup_0275a84f6201231d8bdecc3351d336e0)
+        ;
+
+        
+    
+    
+            var marker_2638cb83da3eb8f1e108a3e3b06026a5 = L.marker(
+                [13.3611, 100.9847],
+                {}
+            ).addTo(map_5a215b148a2f6df325326bdfff63f135);
+        
+    
+        var popup_e87cd4bb8dd0fda1bb2cc49083888431 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eee92c268326b9f53ea24cb77539bcaa = $(`<div id="html_eee92c268326b9f53ea24cb77539bcaa" style="width: 100.0%; height: 100.0%;">虎峰工程土地 (Chonburi)</div>`)[0];
+            popup_e87cd4bb8dd0fda1bb2cc49083888431.setContent(html_eee92c268326b9f53ea24cb77539bcaa);
+        
+
+        marker_2638cb83da3eb8f1e108a3e3b06026a5.bindPopup(popup_e87cd4bb8dd0fda1bb2cc49083888431)
+        ;
+
+        
+    
+    
+            var poly_line_2da1773604a7a565d096e10c2db6632b = L.polyline(
+                [[13.7316, 100.5824], [13.3611, 100.9847]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_5a215b148a2f6df325326bdfff63f135);
+        
+    
+            var marker_faf2ae1d7ce7f1666f5038da66774020 = L.marker(
+                [13.3611, 100.9847],
+                {}
+            ).addTo(map_5a215b148a2f6df325326bdfff63f135);
+        
+    
+            var icon_129ec4f7fb7d0c520544cc08a6266f9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_faf2ae1d7ce7f1666f5038da66774020.setIcon(icon_129ec4f7fb7d0c520544cc08a6266f9d);
+        
+    
+        var popup_babed616970bb2d8be56a830902cfcd2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c766ce0de21bdc895a33dacb1d41843 = $(`<div id="html_2c766ce0de21bdc895a33dacb1d41843" style="width: 100.0%; height: 100.0%;">虎峰工程土地 (Chonburi) 约 59.8 公里</div>`)[0];
+            popup_babed616970bb2d8be56a830902cfcd2.setContent(html_2c766ce0de21bdc895a33dacb1d41843);
+        
+
+        marker_faf2ae1d7ce7f1666f5038da66774020.bindPopup(popup_babed616970bb2d8be56a830902cfcd2)
+        ;
+
+        
+    
+    
+            var marker_e23dbbce0880398e9801545d94df266b = L.marker(
+                [13.4, 101.0],
+                {}
+            ).addTo(map_5a215b148a2f6df325326bdfff63f135);
+        
+    
+        var popup_91581e5397509ebd4330443e666e574b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f1419c990de35263aa5f967b061033d0 = $(`<div id="html_f1419c990de35263aa5f967b061033d0" style="width: 100.0%; height: 100.0%;">华川工地 (Chonburi)</div>`)[0];
+            popup_91581e5397509ebd4330443e666e574b.setContent(html_f1419c990de35263aa5f967b061033d0);
+        
+
+        marker_e23dbbce0880398e9801545d94df266b.bindPopup(popup_91581e5397509ebd4330443e666e574b)
+        ;
+
+        
+    
+    
+            var poly_line_87d338c23c4b24fa0557f4d5ed663e8e = L.polyline(
+                [[13.7316, 100.5824], [13.4, 101.0]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_5a215b148a2f6df325326bdfff63f135);
+        
+    
+            var marker_64b93b7e8dcb3024e25687894aa7907d = L.marker(
+                [13.4, 101.0],
+                {}
+            ).addTo(map_5a215b148a2f6df325326bdfff63f135);
+        
+    
+            var icon_3234cede0e4dc94a0ec814b60cac5728 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_64b93b7e8dcb3024e25687894aa7907d.setIcon(icon_3234cede0e4dc94a0ec814b60cac5728);
+        
+    
+        var popup_5eb262db043cc65a859b9722ebd58ba5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c5e3961567246b08e79674529e343a4 = $(`<div id="html_1c5e3961567246b08e79674529e343a4" style="width: 100.0%; height: 100.0%;">华川工地 (Chonburi) 约 58.2 公里</div>`)[0];
+            popup_5eb262db043cc65a859b9722ebd58ba5.setContent(html_1c5e3961567246b08e79674529e343a4);
+        
+
+        marker_64b93b7e8dcb3024e25687894aa7907d.bindPopup(popup_5eb262db043cc65a859b9722ebd58ba5)
+        ;
+
+        
+    
+    
+            var marker_daf3376fc223ee891bb74ab8b21a34d5 = L.marker(
+                [13.74, 100.56],
+                {}
+            ).addTo(map_5a215b148a2f6df325326bdfff63f135);
+        
+    
+        var popup_d18dffb9052f2b2f23a87c74e79524ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b01310e44145e5c2cf7092c8938d385c = $(`<div id="html_b01310e44145e5c2cf7092c8938d385c" style="width: 100.0%; height: 100.0%;">新南洋公司 (Bangkok)</div>`)[0];
+            popup_d18dffb9052f2b2f23a87c74e79524ae.setContent(html_b01310e44145e5c2cf7092c8938d385c);
+        
+
+        marker_daf3376fc223ee891bb74ab8b21a34d5.bindPopup(popup_d18dffb9052f2b2f23a87c74e79524ae)
+        ;
+
+        
+    
+    
+            var poly_line_7d8252905c84ae50207ec3d8befc8f74 = L.polyline(
+                [[13.7316, 100.5824], [13.74, 100.56]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_5a215b148a2f6df325326bdfff63f135);
+        
+    
+            var marker_c184a4188d914b4d3c36c4c8d1299d0c = L.marker(
+                [13.74, 100.56],
+                {}
+            ).addTo(map_5a215b148a2f6df325326bdfff63f135);
+        
+    
+            var icon_f9322db951df432e497b2160cb9973a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c184a4188d914b4d3c36c4c8d1299d0c.setIcon(icon_f9322db951df432e497b2160cb9973a1);
+        
+    
+        var popup_88ba03070369511ee607283ea1cda404 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dbee2bdc9e58c71166be7c04af97cfd9 = $(`<div id="html_dbee2bdc9e58c71166be7c04af97cfd9" style="width: 100.0%; height: 100.0%;">新南洋公司 (Bangkok) 约 2.6 公里</div>`)[0];
+            popup_88ba03070369511ee607283ea1cda404.setContent(html_dbee2bdc9e58c71166be7c04af97cfd9);
+        
+
+        marker_c184a4188d914b4d3c36c4c8d1299d0c.bindPopup(popup_88ba03070369511ee607283ea1cda404)
+        ;
+
+        
+    
+    
+            var marker_3ee45be31c227792b76fc077fd7843ff = L.marker(
+                [13.6167, 100.5667],
+                {}
+            ).addTo(map_5a215b148a2f6df325326bdfff63f135);
+        
+    
+        var popup_a1c29d3441584c32b52803bf401c04af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e1137bdcb7fb2e92882255fbfe37e8d2 = $(`<div id="html_e1137bdcb7fb2e92882255fbfe37e8d2" style="width: 100.0%; height: 100.0%;">新南洋土地 (英业达电子厂)</div>`)[0];
+            popup_a1c29d3441584c32b52803bf401c04af.setContent(html_e1137bdcb7fb2e92882255fbfe37e8d2);
+        
+
+        marker_3ee45be31c227792b76fc077fd7843ff.bindPopup(popup_a1c29d3441584c32b52803bf401c04af)
+        ;
+
+        
+    
+    
+            var poly_line_be3ffed13a8092228c381e665a26e973 = L.polyline(
+                [[13.7316, 100.5824], [13.6167, 100.5667]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_5a215b148a2f6df325326bdfff63f135);
+        
+    
+            var marker_bbed5323c42d22f21f217f549e9c9dc7 = L.marker(
+                [13.6167, 100.5667],
+                {}
+            ).addTo(map_5a215b148a2f6df325326bdfff63f135);
+        
+    
+            var icon_b1687f1e52d6864eb19d48556d2705d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bbed5323c42d22f21f217f549e9c9dc7.setIcon(icon_b1687f1e52d6864eb19d48556d2705d7);
+        
+    
+        var popup_cf941d57a7f170cfe28bd92eb7d75135 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1eb2a3fd0dcb5695052d444478776703 = $(`<div id="html_1eb2a3fd0dcb5695052d444478776703" style="width: 100.0%; height: 100.0%;">新南洋土地 (英业达电子厂) 约 12.8 公里</div>`)[0];
+            popup_cf941d57a7f170cfe28bd92eb7d75135.setContent(html_1eb2a3fd0dcb5695052d444478776703);
+        
+
+        marker_bbed5323c42d22f21f217f549e9c9dc7.bindPopup(popup_cf941d57a7f170cfe28bd92eb7d75135)
+        ;
+
+        
+    
+    
+            var marker_92915639738a0bf24c960e0ad24f6d1a = L.marker(
+                [12.68, 101.15],
+                {}
+            ).addTo(map_5a215b148a2f6df325326bdfff63f135);
+        
+    
+        var popup_45935082dcf434a4c17cff400d68140b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7db522c2ba0a49ea549370ebd8251723 = $(`<div id="html_7db522c2ba0a49ea549370ebd8251723" style="width: 100.0%; height: 100.0%;">荣泰工地 (Rayong)</div>`)[0];
+            popup_45935082dcf434a4c17cff400d68140b.setContent(html_7db522c2ba0a49ea549370ebd8251723);
+        
+
+        marker_92915639738a0bf24c960e0ad24f6d1a.bindPopup(popup_45935082dcf434a4c17cff400d68140b)
+        ;
+
+        
+    
+    
+            var poly_line_1692fb15a041c595f3fb3569e20bd492 = L.polyline(
+                [[13.7316, 100.5824], [12.68, 101.15]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_5a215b148a2f6df325326bdfff63f135);
+        
+    
+            var marker_dcfe3f3949516f8bdb7cee6e9c3e98d8 = L.marker(
+                [12.68, 101.15],
+                {}
+            ).addTo(map_5a215b148a2f6df325326bdfff63f135);
+        
+    
+            var icon_f55481e31df0a810ee9cf51b9ec13990 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_dcfe3f3949516f8bdb7cee6e9c3e98d8.setIcon(icon_f55481e31df0a810ee9cf51b9ec13990);
+        
+    
+        var popup_37d2275c53eafb9db09a8328454f0d0a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f2b0fcba425d445b1bc3200eabbdc212 = $(`<div id="html_f2b0fcba425d445b1bc3200eabbdc212" style="width: 100.0%; height: 100.0%;">荣泰工地 (Rayong) 约 131.6 公里</div>`)[0];
+            popup_37d2275c53eafb9db09a8328454f0d0a.setContent(html_f2b0fcba425d445b1bc3200eabbdc212);
+        
+
+        marker_dcfe3f3949516f8bdb7cee6e9c3e98d8.bindPopup(popup_37d2275c53eafb9db09a8328454f0d0a)
+        ;
+
+        
+    
+    
+            var marker_aa7e4b0b9ba5efe947005ef6eac90ee5 = L.marker(
+                [13.35, 101.05],
+                {}
+            ).addTo(map_5a215b148a2f6df325326bdfff63f135);
+        
+    
+        var popup_13edf4695bef9e6bbbb25c6653694b90 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_222b2e31f47f6fa0a9ca5c1f8c95208f = $(`<div id="html_222b2e31f47f6fa0a9ca5c1f8c95208f" style="width: 100.0%; height: 100.0%;">华川公司 (Chonburi)</div>`)[0];
+            popup_13edf4695bef9e6bbbb25c6653694b90.setContent(html_222b2e31f47f6fa0a9ca5c1f8c95208f);
+        
+
+        marker_aa7e4b0b9ba5efe947005ef6eac90ee5.bindPopup(popup_13edf4695bef9e6bbbb25c6653694b90)
+        ;
+
+        
+    
+    
+            var poly_line_d9e1c681f7a137e3ef047e8a362f97d9 = L.polyline(
+                [[13.7316, 100.5824], [13.35, 101.05]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_5a215b148a2f6df325326bdfff63f135);
+        
+    
+            var marker_40b826ecca37be4561f93298b191de4c = L.marker(
+                [13.35, 101.05],
+                {}
+            ).addTo(map_5a215b148a2f6df325326bdfff63f135);
+        
+    
+            var icon_0cf3dd3d93e8dfd9c7e4800d7f7f8259 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_40b826ecca37be4561f93298b191de4c.setIcon(icon_0cf3dd3d93e8dfd9c7e4800d7f7f8259);
+        
+    
+        var popup_45f98fc38068ef919ac6cff975fd1f25 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9ca33b3dfce6ff8c780e3a11b00eaf9 = $(`<div id="html_c9ca33b3dfce6ff8c780e3a11b00eaf9" style="width: 100.0%; height: 100.0%;">华川公司 (Chonburi) 约 65.9 公里</div>`)[0];
+            popup_45f98fc38068ef919ac6cff975fd1f25.setContent(html_c9ca33b3dfce6ff8c780e3a11b00eaf9);
+        
+
+        marker_40b826ecca37be4561f93298b191de4c.bindPopup(popup_45f98fc38068ef919ac6cff975fd1f25)
+        ;
+
+        
+    
+</script>
+</html>
